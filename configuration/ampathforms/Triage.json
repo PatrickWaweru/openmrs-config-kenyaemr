@@ -142,6 +142,7 @@
               "label": "Weight(kg):",
               "type": "obs",
               "id": "weight",
+              "required": "true",
               "questionOptions": {
                 "concept": "5089AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
@@ -153,6 +154,7 @@
               "label": "Height(cm):",
               "type": "obs",
               "id": "height",
+              "required": "true",
               "questionOptions": {
                 "concept": "5090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
                 "rendering": "number",
