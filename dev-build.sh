@@ -11,7 +11,7 @@ CWD=$(pwd)
 npx --legacy-peer-deps openmrs@next build \
   --build-config ./configuration/dev-build-config.json \
   --target ./frontend \
-  --page-title "KenyaEMR" \
+  --page-title "SSEMR" \
   --support-offline false
 
 # Assemble assets
@@ -24,8 +24,8 @@ npx --legacy-peer-deps openmrs@next assemble \
 
 # Copy required files
 echo "Copying required files ..."
-cp "${CWD}/assets/kenyaemr-login-logo.png" "${CWD}/frontend"
-cp "${CWD}/assets/kenyaemr-primary-logo.png" "${CWD}/frontend"
+cp "${CWD}/assets/login-icon.svg" "${CWD}/frontend"
+cp "${CWD}/assets/primary-navigation.png" "${CWD}/frontend"
 cp "${CWD}/assets/favicon.ico" "${CWD}/frontend"
 cp "${CWD}/configuration/dev-config.json" "${CWD}/frontend"
 mv "${CWD}/frontend/dev-config.json" "${CWD}/frontend/config.json"
